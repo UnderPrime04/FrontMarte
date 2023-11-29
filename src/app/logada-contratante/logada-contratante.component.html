@@ -1,0 +1,51 @@
+<body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <nav class="navbar">
+        <img src="..\assets\m_arte.png" width="100px" height="100px" routerLink="">
+        <div class="search-box">
+            <input type="text" class="search-input" placeholder="Pesquisar">
+            <button class="search-button"><i class="fas fa-search"></i></button>
+        </div>
+        <button class="chat-button"><i class="fas fa-comment-alt"></i> Chat</button>
+    </nav>
+    <div class="container-principal">
+        <div class="container"> 
+            <div class="carousel"> 
+                <div class="carousel-items"> 
+                    <div class="card" *ngFor="let item of artistas"> 
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Nome</th>
+                                    <th>Tipo</th>
+                                    <th>Descrição</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>{{item.nome}}</td>
+                                    <td>{{item.tipo}}</td>
+                                    <td>{{item.descricao}}</td>
+                                </tr>
+                            </tbody>
+</table>
+                    </div> 
+                </div> 
+            </div> 
+        </div> 
+    </div> 
+        <div class="section1">
+            <!-- Conteúdo da segunda seção -->
+            <div class="title-image-container">
+                <img src="..\assets\fita.png" alt="Imagem" width="200px" height="150px">
+                <h2><br>ARTISTAS FAVORITOS</h2>
+            </div>
+            <div class="carousel2">
+                <div class="carousel-items">
+                    <div class="card">Card 1</div>
+                    <div class="card">Card 2</div>
+                    <div class="card">Card 3</div>
+                </div>
+            </div>
+        </div>
+</body>

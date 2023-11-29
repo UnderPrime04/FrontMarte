@@ -1,0 +1,130 @@
+.fundo {
+    position: fixed;
+    display: flex;
+    flex-direction: column; /* Alinhar itens na vertical */
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    margin-left: -20px;
+    top: 0;
+    width: 120%;
+    height: 100vh;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    padding: 0 16px;
+    align-items: center;
+    height: 100px;
+    font: 500 20px/32px Roboto, "Helvetica Neue", sans-serif;
+}
+
+.nav img{
+    margin-left: 40px;
+}
+
+.comp {
+    margin-left: 980px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.espaco-login {
+    width: 400px; /* Largura do retângulo */
+    height: 450px; /* Altura do retângulo */
+    background-color: #d3f8ff; /* Cor do retângulo */
+    margin-top: 120px; /* Espaço entre a barra de navegação e a div "espaco-login" */
+    margin-left: -250px;
+    border: 2px solid black;
+    border-radius: 20px;
+    border-color: #000000;
+    
+}
+
+.Text1{
+ font-size: 20px;
+ margin-top: 5px; /* Ajuste a posição vertical conforme necessário */
+ margin-left: 130px; /* Posiciona o texto no canto esquerdo */
+}
+
+.Text2{
+    font-size: 20px;
+    margin-top: 15px; /* Ajuste a posição vertical conforme necessário */
+    margin-left: 50px; /* Posiciona o texto no canto esquerdo */
+}
+
+.inserir-email {
+    margin-top: 0px; /* Ajuste a posição vertical conforme necessário */
+    margin-left: 50px;
+    width: 190px;
+    border: none;
+    border-bottom: 1px solid #000000;
+    outline: none; /* Remove a borda ao focar no campo */
+    transition: border-bottom-color 0.3s; /* Transição de cor do fundo do placeholder */
+}
+
+.inserir-email:focus, .inserir-senha:focus {
+    border-bottom-color: purple; /* Cor do fundo do placeholder quando focado */
+}
+
+.Text3{
+    font-size: 20px;
+    margin-top: 15px; /* Ajuste a posição vertical conforme necessário */
+    margin-left: 50px; /* Posiciona o texto no canto esquerdo */
+}
+
+.inserir-senha {
+    margin-top: 0px; /* Ajuste a posição vertical conforme necessário */
+    margin-left: 50px;
+    width: 190px;
+    border: none;
+    border-bottom: 1px solid #000000;
+    outline: none; /* Remove a borda ao focar no campo */
+}
+
+.button {
+    margin-top: 150px;
+    margin-left: 100px;
+    padding: 15px 90px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Espaço entre o ícone e o texto */
+}
+
+.button:hover {
+    box-shadow: 0 8px 16px #ffffff; ; /* Adicione sombra ao passar o cursor para dar feedback visual */
+    background-color: #1BAAE0;
+    color: #000000;
+  }
+
+.arrow {
+    font-size: 18px;
+}
+
+.Text4{
+    font-size: 15px;
+    margin-top: 25px; /* Ajuste a posição vertical conforme necessário */
+    margin-left: 70px; /* Posiciona o texto no canto esquerdo */
+    text-decoration: none;
+    color:#000000;
+    display: block;
+}
+
+.Text4:hover {
+    color: #0300a1;
+  }
+
+

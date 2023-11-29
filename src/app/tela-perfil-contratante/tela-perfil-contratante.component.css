@@ -1,0 +1,224 @@
+.fundo {
+    background: linear-gradient(to bottom, #000000 10%, #D8F8FF  10%);
+    background-color: #D8F8FF;
+    margin-top: 120px;
+    width: 30vw;
+    height: 90vh;
+    margin-left:100px;
+    border-radius: 20px;
+}
+
+.fundo::before {
+    content: '';
+    position: absolute;
+    top: 60%; /* Posiciona o elemento na metade da altura */
+    width: 410px;
+    left: 110px;
+    right: 0;
+    border-top: 1px solid #908b8b51; /* Adiciona uma linha horizontal de 1 pixel de largura e cor preta (#000) */
+}
+
+.fundo::after {
+    content: '';
+    position: absolute;
+    top: 85%; /* Posiciona o elemento na metade da altura */
+    width: 410px;
+    left: 110px;
+    right: 0;
+    border-top: 1px solid #908b8b51; /* Adiciona uma linha horizontal de 1 pixel de largura e cor preta (#000) */
+}
+
+.container-perfil {
+    margin-top: 30px;
+    margin-left: 170px;
+}
+
+.container-perfil img{
+    margin-top: 40px;
+    margin-left: 15px;
+    border: 3px solid #D8F8FF;
+    border-radius: 50%;
+}
+
+.container-perfil h2{
+    color: #000000;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-left: -15px;
+    font-family: "Raleway", bold, sans-serif;
+}
+
+.container-perfil h3{
+    font-size: 16px;
+    margin-top: 90px;
+    margin-left: -40px;
+    font-family: "Raleway", bold, sans-serif;
+}
+
+.container-perfil h4{
+    font-size: 16px;
+    margin-top: 0px;
+    margin-left: -40px;
+    font-family: "Raleway", sans-serif;
+}
+
+.container-perfil h5{
+    font-size: 16px;
+    margin-top: 120px;
+    margin-left: -40px;
+    font-family: "Raleway", sans-serif;
+    color: blue;
+    text-decoration: underline;
+}
+
+h5 i.fas.fa-calendar {
+    margin-right: 10px; /* Ajuste o valor conforme necessário */
+}
+
+.container-perfil h6{
+    font-size: 16px;
+    margin-top: 15px;
+    margin-left: -40px;
+    font-family: "Raleway", sans-serif;
+    color: blue;
+    text-decoration: underline;
+}
+
+h6 i.fas.fa-star {
+    margin-right: 10px; /* Ajuste o valor conforme necessário */
+}
+
+.container1{
+    display:block;
+    align-items: baseline;
+    margin-top: 120px;
+    margin-left: -30px;
+}
+
+.calender {
+    background: linear-gradient(to bottom, #000000 10%, #000000  10%);
+    background-color: #000000;
+    margin-top: -720px;
+    width: 40vw;
+    height: 55vh;
+    margin-left:800px;
+    border-radius: 20px;
+}
+
+.avaliacoes {
+    background: linear-gradient(to bottom, #000000 20%, #D8F8FF  10%);
+    background-color: #D8F8FF;
+    margin-top: 140px;
+    width: 40vw;
+    height: 30vh;
+    margin-left:770px;
+    border-radius: 20px;
+}
+
+.contratos {
+    background: linear-gradient(to bottom, #000000 20%, #D8F8FF  10%);
+    background-color: #20454e;
+    margin-top: 50px;
+    width: 30vw;
+    height: 30vh;
+    margin-left:70px;
+    border-radius: 20px;     
+}
+
+.container-contratos {
+    margin-top: -10px;
+    margin-left: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-contratos h2{
+    color:#20454e;
+    font-size: 20px;
+    margin-top: 90px;
+    margin-left: -40px;
+    font-family: "Raleway", bold, sans-serif;
+}
+
+.container-avaliacoes {
+    margin-top: -10px;
+    margin-left: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-avaliacoes h2{
+    color:#20454e;
+    font-size: 20px;
+    margin-top: 90px;
+    margin-left: -40px;
+    font-family: "Raleway", bold, sans-serif;
+}
+
+.chat {
+    background: linear-gradient(to bottom, #000000 20%, #000000  10%);
+    background-color: #010203;
+    margin-top: -210px;
+    width: 10vw;
+    height: 30vh;
+    margin-left: 1400px;
+    border-radius: 20px;
+}
+
+.container-chat {
+    margin-top: 10px;
+    margin-left: 170px;
+    display: grid;
+    justify-content: space-between;
+}
+
+.container-chat h2{
+    color:#dde5e7;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-left: -150px;
+    font-family: "Raleway", bold, sans-serif;
+}
+
+.fa-comment-alt {
+    font-size: inherit;
+    margin-left: -150px; /* Espaçamento entre o ícone e o texto */
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    font: 500 20px/32px Roboto, "Helvetica Neue", sans-serif;
+    padding: 0 16px;
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+
+.nav ul li {
+    display:inline;
+    margin-right: 290px;
+}
+
+.nav ul li a {
+    text-align: center; /* Centralize horizontalmente o texto */
+    line-height: 50px; /* Centralize verticalmente o texto */
+    text-decoration: none;
+    color: white;
+}
+
+.nav img{
+    margin-left: 40px;
+}

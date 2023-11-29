@@ -1,0 +1,229 @@
+.fundo {
+    position: fixed;
+    display: flex;
+    flex-direction: column; /* Alinhar itens na vertical */
+    align-items: center;
+    justify-content: center;
+    background-color: #1BAAE0;
+    margin-left: -8px;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    font: 500 20px/32px Roboto, "Helvetica Neue", sans-serif;
+    padding: 0 16px;
+}
+
+.image-text {
+    display: flex; /* Ativa o modelo de layout flexbox */
+    align-items: center; /* Alinha verticalmente o conteúdo ao centro */
+    justify-content: flex-end; /* Alinha o conteúdo à direita */
+}
+
+.image-text-container {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente os elementos */
+}
+
+.navbar-image {
+    position: absolute;
+    right: 60px; /* Ajuste a quantidade de espaço desejada da borda direita */
+    top: 50%; /* Centraliza verticalmente a imagem */
+    transform: translateY(-50%); /* Ajusta a imagem verticalmente */
+    margin-left: 10px; /* Adicione um espaço entre a imagem e o texto */
+}
+
+
+.image-text p{
+    right: 200px; /* Adiciona um espaço entre o texto e a imagem */
+}
+
+.nav img{
+    margin-left: 40px;
+}
+
+.chat-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0 10px;
+    font-size: 20px;
+    margin-right: 200px;
+    color: #ffffff; /* Cor do texto */
+}
+
+/* Estilos para o ícone de chat (FontAwesome) */
+.fa-comment-alt {
+    font-size: inherit;
+    margin-right: 5px; /* Espaçamento entre o ícone e o texto */
+}
+
+/* Estilos para a barra de pesquisa */
+.search-box {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    margin: 0 16px; /* Espaçamento à esquerda e à direita */
+}
+
+.search-input {
+    border: none;
+    outline: none;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2); /* Fundo transparente */
+    color: #ffffff; /* Cor do texto */
+    width: 190px; /* Largura do campo de pesquisa */
+}
+
+.search-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0 10px;
+    font-size: 20px;
+    color: #ffffff; /* Cor do ícone de pesquisa */
+    margin-left: -50px;
+}
+
+/* Estilos para o ícone de pesquisa (FontAwesome) */
+.fa-search {
+    font-size: inherit;
+}
+
+
+.espaco-login {
+    position: fixed;
+    width: 400px; /* Largura do retângulo */
+    height: 490px; /* Altura do retângulo */
+    background-color: #FFFFFF; /* Cor do retângulo */
+    margin-top: 120px; /* Espaço entre a barra de navegação e a div "espaco-login" */    
+}
+
+.espaco-login h1 {
+    font-size: 24px; /* Tamanho da fonte */
+    color: #333; /* Cor do texto */
+    text-align: center; /* Centraliza o texto horizontalmente */
+    margin-top: 20px; /* Espaço acima do título */
+}
+
+/* Estilos para a imagem dentro de .espaco-login */
+.espaco-login-text {
+    position: fixed;
+    font-size: 16px; /* Tamanho da fonte do texto */
+    color: #333; /* Cor do texto */
+    margin-left: 150px; /* Espaço entre a imagem e o texto (ajuste conforme necessário) */
+    display: inline-block; /* Permite que o texto fique ao lado da imagem */
+    vertical-align: top; /* Alinha o topo do texto com o topo da imagem */
+    margin-top: 40px;
+}
+
+/* Adicione esta classe CSS para o segundo texto */
+.espaco-login-text2 {
+    position: fixed;
+    font-size: 16px; /* Tamanho da fonte do texto */
+    color: #8a99cb; /* Cor do texto */
+    margin-left: 152px; /* Espaço entre a imagem e o texto (ajuste conforme necessário) */
+    margin-top: 60px; /* Espaço entre o primeiro e o segundo texto */
+}
+
+.espaco-login-text3 {
+    position: fixed;
+    font-size: 16px; /* Tamanho da fonte do texto */
+    color: #000000; /* Cor do texto */
+    margin-left: 152px; /* Espaço entre a imagem e o texto (ajuste conforme necessário) */
+    margin-top: 82px; /* Espaço entre o primeiro e o segundo texto */
+}
+
+.espaco-login-text4 {
+    position: fixed;
+    font-size: 16px; /* Tamanho da fonte do texto */
+    color: #000000; /* Cor do texto */
+    margin-left: 152px; /* Espaço entre a imagem e o texto (ajuste conforme necessário) */
+    margin-top: 125px; /* Espaço entre o primeiro e o segundo texto */
+}
+
+.espaco-login-text5 {
+    position: fixed;
+    font-size: 16px; /* Tamanho da fonte do texto */
+    color: #000000; /* Cor do texto */
+    margin-left: 152px; /* Espaço entre a imagem e o texto (ajuste conforme necessário) */
+    margin-top: 145px; /* Espaço entre o primeiro e o segundo texto */
+}
+
+.espaco-login-text6 {
+    position: fixed;
+    font-size: 16px; /* Tamanho da fonte do texto */
+    color: #000000; /* Cor do texto */
+    margin-left: 152px; /* Espaço entre a imagem e o texto (ajuste conforme necessário) */
+    margin-top: 180px; /* Espaço entre o primeiro e o segundo texto */
+}
+
+.espaco-login-text7 {
+    position: fixed;
+    font-size: 16px; /* Tamanho da fonte do texto */
+    color: #000000; /* Cor do texto */
+    margin-left: 152px; /* Espaço entre a imagem e o texto (ajuste conforme necessário) */
+    margin-top: 200px; /* Espaço entre o primeiro e o segundo texto */
+}
+
+.espaco-login-text8 {
+    position: fixed;
+    font-size: 16px; /* Tamanho da fonte do texto */
+    color: #000000; /* Cor do texto */
+    margin-left: 152px; /* Espaço entre a imagem e o texto (ajuste conforme necessário) */
+    margin-top: 240px; /* Espaço entre o primeiro e o segundo texto */
+}
+
+.espaco-login-text9 {
+    position: fixed;
+    font-size: 16px; /* Tamanho da fonte do texto */
+    color: #000000; /* Cor do texto */
+    margin-left: 152px; /* Espaço entre a imagem e o texto (ajuste conforme necessário) */
+    margin-top: 260px; /* Espaço entre o primeiro e o segundo texto */
+}
+
+.espaco-login-image {
+    position: fixed;
+    display: block; /* Evita espaços indesejados abaixo da imagem */
+    margin: 10px; /* Centraliza horizontalmente e adiciona espaço acima e abaixo da imagem */
+    margin-top: 20px; /* Ajuste a margem superior conforme necessário para posicionar a imagem e o texto corretamente */
+}
+
+
+.container {
+    display: flex;
+    align-items: baseline;
+    margin-top: 20px; /* Espaço entre a imagem e o título */
+}
+
+.button-aceitar {
+    background-color: #5a80fb; /* Cor de fundo preta */
+    color: #fff; /* Cor do texto branca */
+    text-align: center; /* Centraliza o texto horizontalmente */
+    display: block; /* Torna o botão um bloco para centralizá-lo horizontalmente */
+    margin: 0 auto; /* Margem automática horizontal para centralizar */
+    padding: 10px 20px; /* Espaçamento interno para melhor aparência */
+    border: none; /* Remove a borda */
+    border-radius: 20px; /* Borda arredondada */
+    font-size: 16px; /* Tamanho da fonte */
+    width: 300px;
+    cursor: pointer; /* Altera o cursor para parecer um ponteiro ao passar por cima */
+    margin-top: 350px;
+}
+
+
+

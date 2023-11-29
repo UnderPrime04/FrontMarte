@@ -1,0 +1,126 @@
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+<div class="fundo">
+    <div class="nav">
+        <img src="..\assets\m_arte.png" width="100px" height="100px" routerLink="">
+        <a class="comp" href="#">
+            Inscrever-se | Entrar
+        </a>
+    </div>
+    <div class="espaco-login">
+        <h1 class="Text1">Faça seu cadastro</h1>
+        <h1 class="Text2">Tipo de cadastro:</h1>
+        <label>
+            <input class="button-radio1" type="radio" name="tipo-cadastro" value="pessoa-fisica"
+                (click)="mostrarComponentes('pessoa-fisica')"> Artista
+        </label>
+        <label>
+            <input class="button-radio2" type="radio" name="tipo-cadastro" value="pessoa-juridica"
+                (click)="mostrarComponentes('pessoa-juridica')"> Contratante
+        </label>
+        <div id="componentes-pessoas-fisica" style="display: none;">
+            <form [formGroup]="cadastroForm" class="input-table" (ngSubmit)="cadastrar()">
+                <div class="form-group">
+                    <label class="escolha-opcao" style="color: rgb(0, 0, 0);">Selecione sua função:&nbsp;</label>
+                    <select id="escolha-opcao" formControlName="artista">
+                        <option value="opcao1">Cantor</option>
+                        <option value="opcao2">Músico</option>
+                        <option value="opcao3">Dançarino</option>
+                        <!-- Adicione mais opções, se necessário -->
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Nome</label>
+                    <input type="text" class="form-control" formControlName="nome" />
+                </div>
+
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" class="form-control" formControlName="email" />
+                    <span *ngIf="cadastroForm.get('email')?.invalid && cadastroForm.get('email')?.touched" class="mensagem-erro">
+                        E-mail inválido
+                    </span>
+                </div>
+
+                <div class="form-group">
+                    <label>CPF</label>
+                    <input type="text" class="form-control" formControlName="cpf" />
+                    <span *ngIf="cadastroForm.get('cpf')?.invalid && cadastroForm.get('cpf')?.touched" class="mensagem-erro">
+                        CPF inválido
+                    </span>
+                </div>
+
+                <div class="form-group">
+                    <label>Celular</label>
+                    <input type="text" class="form-control" formControlName="tel" />
+                </div>
+
+                <div class="form-group">
+                    <label>Senha</label>
+                    <input type="password" class="form-control" formControlName="senha" #senhaInput />
+                </div>
+
+                <div class="form-group">
+                    <label>Confirme sua senha</label>
+                    <input type="password" class="form-control" formControlName="chkSenha" />
+                    <span class="mostrar-senha" (click)="mostrarSenha()">Mostrar</span>
+                </div>
+                <button class="button" routerLink="/logada/1">Confirmar</button>
+                
+            </form>
+        </div>
+        <div id="componentes-pessoas-juridica" style="display: none;">
+            <form [formGroup]="cadastroForm" class="input-table">
+                <div class="form-group">
+                    <label class="escolha-opcao" style="color: rgb(0, 0, 0);">Selecione seu negócio:&nbsp;</label>
+                    <select id="escolha-opcao" formControlName="contratante">
+                        <option value="opcao1">Estabelecimento</option>
+                        <option value="opcao2">Casa de Show</option>
+                        <option value="opcao3">Outro</option>
+                        <!-- Adicione mais opções, se necessário -->
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Nome</label>
+                    <input type="text" class="form-control" formControlName="nome" />
+                </div>
+
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" class="form-control" formControlName="email" />
+                    <span *ngIf="cadastroForm.get('email')?.invalid && cadastroForm.get('email')?.touched" class="mensagem-erro">
+                        E-mail inválido
+                    </span>
+                </div>
+
+                <div class="form-group">
+                    <label>CNPJ</label>
+                    <input type="text" class="form-control" formControlName="cnpj" />
+                    <span *ngIf="cadastroForm.get('cnpj')?.invalid && cadastroForm.get('cnpj')?.touched" class="mensagem-erro">
+                        CNPJ inválido
+                    </span>
+                </div>
+
+                <div class="form-group">
+                    <label>CEP</label>
+                    <input type="text" class="form-control" formControlName="cep" />
+                </div>
+
+
+                <div class="form-group">
+                    <label>Senha</label>
+                    <input type="password" class="form-control" formControlName="senha" #senhaInput />
+                </div>
+
+                <div class="form-group">
+                    <label>Confirme sua senha</label>
+                    <input type="password" class="form-control" formControlName="chkSenha" />
+                    <span class="mostrar-senha" (click)="mostrarSenha()">Mostrar</span>
+                </div>
+
+                <button class="button" routerLink="/logada/2">Confirmar</button>
+            </form>
+        </div>
+    </div>
