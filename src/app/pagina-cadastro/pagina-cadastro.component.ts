@@ -2,6 +2,7 @@ import { Component, Renderer2, ViewChild, ElementRef } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ReactiveFormsModule } from "@angular/forms";
 import { Validacoes } from '../validacoes';
+import { Router } from '@angular/router';
 import { z } from "zod";
 
 
@@ -15,10 +16,11 @@ export class PaginaCadastroComponent {
   @ViewChild('confirmarSenhaInput') confirmarSenhaInputRef!: ElementRef;
 
   cadastroForm: FormGroup;
+  errorMessage: string | null = null;
 
   isSenhaVisivel: boolean = false;
 
-  constructor(private renderer: Renderer2, private builder: FormBuilder) {
+  constructor(private router: Router, private builder: FormBuilder) {
     this.cadastroForm = builder.group({
       artista: z.enum(["Cantor", "Músico", "Dançarino"]),
       nome: z.string().min(6),
@@ -64,16 +66,15 @@ export class PaginaCadastroComponent {
     const cadastroValue = this.cadastroForm.get('cpf')?.value;
   
     if (Validacoes.isCpf(cadastroValue)) {
-      return "/logada/1"; // Se for um CPF, redireciona para o caminho correspondente ao login de artista
+      return "/logada/1"; // Redirecionar para a página de login do artista (caso CPF seja válido)
     } else if (Validacoes.isCnpj(cadastroValue)) {
-      return "/logada/2"; // Se for um CNPJ, redireciona para o caminho correspondente ao login de contratante
-    } else {
-      // Se não for CPF nem CNPJ, você pode retornar um valor específico para indicar isso
-      // Aqui, você pode retornar um número (como 2), mas geralmente, para indicar um erro, pode-se retornar null, undefined ou uma string vazia, por exemplo.
-      // O importante é que esse valor retornado indique que não é nem CPF nem CNPJ.
-      // Você pode também exibir uma mensagem de erro para o usuário informando que a entrada não é válida.
-      return null;
+      return "/logada/2";  // Redirecionar para a página de login do contratante (caso CNPJ seja válido)
+    } else if (Validacoes.isEmail(cadastroValue)) {
+      // Se for um e-mail inválido
+      this.errorMessage = 'E-Mail inválido. Verifique o formato do e-mail.';
     }
+
+    return null;
   }
 
   /*cadastro1() {

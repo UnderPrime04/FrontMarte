@@ -20,13 +20,11 @@ export class PaginaLoginComponent {
 
   constructor(private builder: FormBuilder) {
     this.loginForm = builder.group({
-      login: z.string().default('123'),
+      login: ['', Validators.required], // Modifiquei para um campo vazio, para aceitar CPF/CNPJ/Email
       senha: ['', Validators.required]
     });
   }
 
-
-  
   login() {
     const loginValue = this.loginForm.get('login')?.value;
 
@@ -35,14 +33,14 @@ export class PaginaLoginComponent {
     } else if (Validacoes.isCnpj(loginValue)) {
       return "/logada/2";
     } else if (Validacoes.isEmail(loginValue)) {
-      // Verificar se é e-mail válido e fazer a lógica necessária
-      // Para este exemplo, apenas atualizando a mensagem de erro
-      this.errorMessage = 'E-mail válido. Verifique CPF ou CNPJ.';
+      // Se for um e-mail inválido
+      this.errorMessage = 'E-Mail inválido. Verifique o formato do e-mail.';
     } else {
-      this.errorMessage = 'Por favor, insira um e-mail, CPF ou CNPJ válido.';
+      // Se não for CPF, CNPJ ou E-mail válido
+      this.errorMessage = 'Por favor, insira um CPF, CNPJ ou E-Mail válido.';
     }
 
-    return null; // Você pode ajustar o retorno conforme a lógica desejada
+    return null;
   }
 }
 
