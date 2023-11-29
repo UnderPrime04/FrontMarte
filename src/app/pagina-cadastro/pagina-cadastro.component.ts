@@ -1,10 +1,9 @@
-import { Component, Renderer2, ViewChild, ElementRef } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { ReactiveFormsModule } from "@angular/forms";
+import { Component, ViewChild, ElementRef } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
 import { Validacoes } from '../validacoes';
 import { Router } from '@angular/router';
-import { z } from "zod";
-
+import { isCPF, isCNPJ } from 'brazilian-values';
+import { z } from 'zod';
 
 @Component({
   selector: 'app-pagina-cadastro',
@@ -61,46 +60,27 @@ export class PaginaCadastroComponent {
       confirmarSenhaInput.setAttribute('type', this.isSenhaVisivel ? 'text' : 'password');
     }
   }
-  
+
   cadastrar() {
-    const cadastroValue = this.cadastroForm.get('cpf')?.value;
-  
-    if (Validacoes.isCpf(cadastroValue)) {
-      return "/logada/1"; // Redirecionar para a página de login do artista (caso CPF seja válido)
-    } else if (Validacoes.isCnpj(cadastroValue)) {
-      return "/logada/2";  // Redirecionar para a página de login do contratante (caso CNPJ seja válido)
-    } else if (Validacoes.isEmail(cadastroValue)) {
-      // Se for um e-mail inválido
-      this.errorMessage = 'E-Mail inválido. Verifique o formato do e-mail.';
-    }
+    const cadastroValue = this.cadastroForm.value;
 
-    return null;
-  }
+    if (isCPF(cadastroValue.cpf)) {
+      this.errorMessage = null; // Limpar a mensagem de erro, se houver
 
-  /*cadastro1() {
-    
-    const cadastroValue = this.cadastroForm.get('cpf')?.value;
-    if (Validacoes.isCpf(cadastroValue)) {
-      return "/logada/1"
-    }
-    else{
-      // falar que tá errado
-      return 2;
+      // Redirecionar para a página correspondente
+      window.location.href = '/logada/1';
+    } else if (isCNPJ(cadastroValue.cnpj)) {
+      this.errorMessage = null; // Limpar a mensagem de erro, se houver
+
+      // Redirecionar para a página correspondente
+      window.location.href = '/logada/2';
+    } else if (Validacoes.isEmail(cadastroValue.email)) {
+      this.errorMessage = null; // Limpar a mensagem de erro, se houver
+
+      // Redirecionar para a página correspondente
+      // (você pode adicionar uma lógica de redirecionamento específica para e-mails válidos, se necessário)
+    } else {
+      this.errorMessage = 'Por favor, insira um CPF, CNPJ ou e-mail válido.';
     }
   }
-
-  cadastro2() {
-    
-    const cadastroValue = this.cadastroForm.get('cnpj')?.value;
-    if (Validacoes.isCnpj(cadastroValue)) {
-      
-      return "/logada/2"
-    }
-    else{
-      // falar que tá errado
-      return 2;
-    }
-  }*/
-
 }
-

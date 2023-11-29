@@ -5,11 +5,11 @@ import { z } from "zod";
 export class Validacoes {
 
 
-  static cnpjSchema = z.string().refine((value) => /\d{2}\.\d{3}\.\d{3}\/\d{4}-\d{2}/.test(value), {
+  static cnpjSchema = z.string().refine((value) => /\d{14}/.test(value), {
     message: "CNPJ inválido",
   });
 
-  static cpfSchema = z.string().refine((value) => /\d{3}\.\d{3}\.\d{3}-\d{2}/.test(value), {
+  static cpfSchema = z.string().refine((value) => /\d{11}/.test(value), {
     message: "CPF inválido",
   });
 
@@ -32,11 +32,10 @@ export class Validacoes {
       return true;
     } catch (error) {
       console.error("CPF não é válido");
-      return false; // Adicionando o retorno false para indicar que o CPF não é válido
+      return false; // Adicionando o retorno false para indicar que o CNPJ não é válido
     }
-  }
 
-  
+  }
 
   static isCnpj(controle: AbstractControl) {
     try {

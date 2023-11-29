@@ -5,6 +5,7 @@ import { ReactiveFormsModule } from "@angular/forms";
 import { Validacoes } from '../validacoes';
 import { z } from "zod";
 import { RouterLink, RouterLinkActive } from '@angular/router';
+import { isCPF, isCNPJ } from 'brazilian-values';
 
 @Component({
   selector: 'app-pagina-login',
@@ -28,19 +29,25 @@ export class PaginaLoginComponent {
   login() {
     const loginValue = this.loginForm.get('login')?.value;
 
-    if (Validacoes.isCpf(loginValue)) {
-      return "/logada/1";
-    } else if (Validacoes.isCnpj(loginValue)) {
-      return "/logada/2";
-    } else if (Validacoes.isEmail(loginValue)) {
-      // Se for um e-mail inválido
-      this.errorMessage = 'E-Mail inválido. Verifique o formato do e-mail.';
+    console.log(loginValue);
+    if (isCPF(loginValue)) {
+      console.log("OIIII");
+      return "../logada/1";
+    } 
+    
+    if (isCNPJ(loginValue)) {
+      console.log("XXXXX");
+      return "../logada/2";
+    }
+    
+    if (Validacoes.isEmail(loginValue)) {
+      // Verificar se é e-mail válido e fazer a lógica necessária
+      // Para este exemplo, apenas atualizando a mensagem de erro
+      this.errorMessage = 'E-mail válido. Verifique CPF ou CNPJ.';
     } else {
-      // Se não for CPF, CNPJ ou E-mail válido
-      this.errorMessage = 'Por favor, insira um CPF, CNPJ ou E-Mail válido.';
+      this.errorMessage = 'Por favor, insira um e-mail, CPF ou CNPJ válido.';
     }
 
-    return null;
-  }
+    return null; // Você pode ajustar o retorno conforme a lógica desejada
 }
-
+}
