@@ -32,26 +32,18 @@
 
                 <div class="form-group">
                     <label>Nome</label>
-                    <input type="text" class="form-control" formControlName="nome" />
+                    <input type="text" class="form-control" formControlName="nome" value="{{ '' }}" />
                 </div>
 
                 <div class="form-group">
                     <label>Email</label>
                     <input type="text" class="form-control" maxlength="40" minlength="3" formControlName="email" />
-                    <span class="mensagem-erro" *ngIf="cadastroForm.get('email')?.invalid && cadastroForm.get('email')?.touched">
-                        <ng-container *ngIf="cadastroForm.get('email')?.hasError('email')">
-                            E-mail inválido
-                        </ng-container>
-                        <ng-container *ngIf="cadastroForm.get('email')?.hasError('required')">
-                            E-mail é um campo obrigatório
-                        </ng-container>
-                    </span>
+                    <span class="mensagem-erro" *ngIf="errorMessage">{{ errorMessage }}</span>
                 </div>
-                
 
                 <div class="form-group">
                     <label>CPF</label>
-                    <input type="text" class="form-control" formControlName="cpf"/>
+                    <input type="text" class="form-control" formControlName="cpf" />
                     <span *ngIf="cadastroForm.get('cpf')?.invalid && cadastroForm.get('cpf')?.touched" class="mensagem-erro">
                         CPF inválido
                     </span>
@@ -90,22 +82,14 @@
 
                 <div class="form-group">
                     <label>Nome</label>
-                    <input type="text" class="form-control" formControlName="nome" />
+                    <input type="text" class="form-control" formControlName="nome" value="">
                 </div>
 
                 <div class="form-group">
                     <label>Email</label>
-                    <input type="text" class="form-control" maxlength="40" minlength="3" formControlName="email" />
-                    <span class="mensagem-erro" *ngIf="cadastroForm.get('email')?.invalid && cadastroForm.get('email')?.touched">
-                        <ng-container *ngIf="cadastroForm.get('email')?.hasError('email')">
-                            E-mail inválido
-                        </ng-container>
-                        <ng-container *ngIf="cadastroForm.get('email')?.hasError('required')">
-                            E-mail é um campo obrigatório
-                        </ng-container>
-                    </span>
+                    <input type="text" class="form-control" maxlength="15" minlength="3" formControlName="login" />
+                    <span class="mensagem-erro" *ngIf="errorMessage">{{ errorMessage }}</span>
                 </div>
-                
 
                 <div class="form-group">
                     <label>CNPJ</label>

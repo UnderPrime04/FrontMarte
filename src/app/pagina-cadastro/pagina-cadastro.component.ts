@@ -34,6 +34,22 @@ export class PaginaCadastroComponent {
       cnpj: z.string().length(14),
       cep: z.string().length(8)
     });
+    this.clearFormFields();
+  }
+
+  clearFormFields() {
+    this.cadastroForm.patchValue({
+      artista: null,
+      nome: null,
+      email: null,
+      cpf: null,
+      tel: null,
+      senha: null,
+      chkSenha: null,
+      contratante: null,
+      cnpj: null,
+      cep: null
+    });
   }
 
   mostrarComponentes(value: string) {
@@ -76,13 +92,12 @@ export class PaginaCadastroComponent {
 
       // Redirecionar para a página correspondente
       window.location.href = '/logada/2';
-    } else if (v8n().string().test(cadastroValue.email)) {
-      // Validação adicional de e-mail usando v8n
-      // Lembre-se de que essa validação é básica, apenas verifica se é uma string, não a validade real do e-mail
-      // Você pode adicionar uma expressão regular ou outra validação mais detalhada aqui
+    } else if (Validacoes.isEmail(cadastroValue.email)) {
+      this.errorMessage = null; // Limpar a mensagem de erro, se houver
 
-      // Redirecionar se o e-mail for válido
-      window.location.href = '/logada/1';
+      // Redirecionar para a página correspondente
+      // (você pode adicionar uma lógica de redirecionamento específica para e-mails válidos, se necessário)
+      window.location.href = '/logada/2'
     } else {
       this.errorMessage = 'Por favor, insira um CPF, CNPJ ou e-mail válido.';
     }

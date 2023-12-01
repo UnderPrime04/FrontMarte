@@ -1,16 +1,3 @@
-.fundo {
-    position: flex;
-    display: flex;
-    flex-direction: column; /* Alinhar itens na vertical */
-    align-items: center;
-    justify-content: center;
-    background-color: #ffffff;
-    margin-left: -8px;
-    top: 0;
-    width: 100%;
-    height: 100vh;
-}
-
 .nav {
     position: fixed;
     top: 0;
@@ -36,9 +23,10 @@
 }
 
 .espaco-login {
+    margin-left: 470px;
     position: flex;
     width: 600px; /* Largura do retângulo */
-    height: 550px; /* Altura do retângulo */
+    height: 720px; /* Altura do retângulo */
     background-color: #d3f8ff; /* Cor do retângulo */
     margin-top: 150px; /* Espaço entre a barra de navegação e a div "espaco-login" */
     border: 2px solid black;
@@ -51,122 +39,39 @@
  font-size: 20px;
  margin-top: 5px; /* Ajuste a posição vertical conforme necessário */
  margin-left: 220px; /* Posiciona o texto no canto esquerdo */
+ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
 .Text2{
     font-size: 20px;
     margin-top: 15px; /* Ajuste a posição vertical conforme necessário */
     margin-left: 10px; /* Posiciona o texto no canto esquerdo */
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
-.Text3nome{
+.form-control {
+    width: 390px; /* Define a largura total do elemento */
+    padding: 8px; /* Adiciona preenchimento interno */
+    margin-bottom: 10px; /* Adiciona espaço abaixo do elemento */
+    border: 1px solid #ccc; /* Adiciona uma borda */
+    border-radius: 8px; /* Adiciona cantos arredondados */
+    box-sizing: border-box; /* Garante que a largura e altura incluam a borda e o preenchimento */
+  }
+
+  .form-group label{
     font-size: 20px;
-    margin-top: 15px; /* Ajuste a posição vertical conforme necessário */
-    margin-left: -5px; /* Posiciona o texto no canto esquerdo */
-    font-family: "Raleway", sans-serif; /* Define a família da fonte */
-}
-.inserir-nome {
-    margin-top: 0px; /* Ajuste a posição vertical conforme necessário */
-    margin-left: -5px;
-    width: 190px;
-    border: none;
-    border-bottom: 1px solid #000000;
-    outline: none; /* Remove a borda ao focar no campo */
-}
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  }
 
-.Text4email{
-    font-size: 20px;
-    margin-top: 15px; /* Ajuste a posição vertical conforme necessário */
-    margin-left: -255px; /* Posiciona o texto no canto esquerdo */
-    font-family: "Raleway", sans-serif; /* Define a família da fonte */
-}
-.inserir-email{
-    margin-top: 0px; /* Ajuste a posição vertical conforme necessário */
-    margin-left: -255px;
-    width: 190px;
-    border: none;
-    border-bottom: 1px solid #000000;
-    outline: none; /* Remove a borda ao focar no campo */
-}
-
-.Text5CPF, .Text9CNPJ{
-    font-size: 20px;
-    margin-top: 15px; /* Ajuste a posição vertical conforme necessário */
-    margin-left: 18px; /* Posiciona o texto no canto esquerdo */
-    font-family: "Raleway", sans-serif; /* Define a família da fonte */
-}
-.inserir-cpf, .inserir-cnpj{
-    margin-top: 0px; /* Ajuste a posição vertical conforme necessário */
-    margin-left: 18px;
-    width: 190px;
-    border: none;
-    border-bottom: 1px solid #000000;
-    outline: none; /* Remove a borda ao focar no campo */
-}
-
-.Text6numero, .Text10CEP{
-    font-size: 20px;
-    margin-top: 15px; /* Ajuste a posição vertical conforme necessário */
-    margin-left: 105px; /* Posiciona o texto no canto esquerdo */
-    font-family: "Raleway", sans-serif; /* Define a família da fonte */
-}
-.inserir-numero, .inserir-cep {
-    margin-top: 0px; /* Ajuste a posição vertical conforme necessário */
-    margin-left: 105px;
-    width: 190px;
-    border: none;
-    border-bottom: 1px solid #000000;
-    outline: none; /* Remove a borda ao focar no campo */
-}
-
-.Text7senha{
-    font-size: 20px;
-    margin-top: 15px; /* Ajuste a posição vertical conforme necessário */
-    margin-left: 18px; /* Posiciona o texto no canto esquerdo */
-    font-family: "Raleway", sans-serif; /* Define a família da fonte */
-}
-.inserir-senha {
-    margin-top: 0px; /* Ajuste a posição vertical conforme necessário */
-    margin-left: 18px;
-    width: 190px;
-    border: none;
-    border-bottom: 1px solid #000000;
-    outline: none; /* Remove a borda ao focar no campo */
-}
-
-.Text8csenha{
-    font-size: 20px;
-    margin-top: 15px; /* Ajuste a posição vertical conforme necessário */
-    margin-left: 105px; /* Posiciona o texto no canto esquerdo */
-    font-family: "Raleway", sans-serif; /* Define a família da fonte */
-}
-
-.inserir-csenha {
-    margin-top: 0px; /* Ajuste a posição vertical conforme necessário */
-    margin-left: 105px;
-    width: 190px;
-    border: none;
-    border-bottom: 1px solid #000000;
-    outline: none; /* Remove a borda ao focar no campo */
-    padding-right: 30px; /* Espaço extra para o ícone */
-}
-
-.fa-eye.active:before {
-    content: '\f06e'; /* Ícone de olho aberto */
-}
-
-.fa-eye:before {
-    content: '\f070'; /* Ícone de olho fechado */
-}
-
-.inserir-nome:focus, .inserir-senha:focus, .inserir-cep:focus, .inserir-cnpj:focus, .inserir-cpf:focus, .inserir-email:focus, .inserir-numero:focus, .inserir-cnpj:focus, .inserir-cep:focus {
-    border-bottom-color: purple; /* Cor do fundo do placeholder quando focado */
-}
+  .form-group label:hover {
+    color: #0300a1;  /* Altera a cor do texto ao passar o mouse */
+    cursor: pointer; /* Altera o cursor ao passar o mouse */
+  }
 
 
 .button {
     margin-top: 20px;
-    margin-left: 180px;
+    margin-left: 140px;
     padding: 15px 90px;
     background-color: #000000;
     color: #ffffff;
@@ -186,13 +91,6 @@
     color: #000000;
   }
 
-.arrow {
-    font-size: 18px;
-}
-
- .Text3nome:hover, .Text4email:hover, .Text5CPF:hover, .Text6numero:hover, .Text7senha:hover, .Text8csenha:hover,.Text9CNPJ:hover, .Text10CEP:hover  {
-    color: #0300a1;
-  }
 
 /* Estilo para o contêiner dos inputs */
 .input-table {
@@ -254,17 +152,6 @@ select#escolha-opcao:focus {
     margin-top: 0px; /* Adicione margem abaixo de cada label */
     margin-left: 20px;
 }
-
-.section3 {
-    margin-top: 20px; /* Define a margem superior como 0px */
-    background-color:#ffffff; /* Cor de fundo azul escuro */
-    height: 10vh; /* Altura de 100% da altura da janela de visualização */
-    width: 1600px; /* Largura de 1500px */
-    margin-left: -101px; /* Define a margem esquerda como -101px */
-    display: flex; /* Usa o modelo de layout flexível */
-    align-items: center; /* Centraliza verticalmente os itens */
-    justify-content: center; /* Centraliza horizontalmente os itens */
-  }
 
   .mostrar-senha {
     position: absolute;

@@ -13,7 +13,7 @@ export class Validacoes {
     message: "CPF inválido",
   });
 
-  static EmailSchema = z.string().refine((value) => /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(value), {
+  static EmailSchema = z.string().refine((value) => /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/.test(value), {
     message: "E-Mail inválido",
   });
 
