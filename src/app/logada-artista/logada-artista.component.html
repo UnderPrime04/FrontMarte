@@ -7,10 +7,34 @@
             <button class="search-button"><i class="fas fa-search"></i></button>
         </div>
         <button class="chat-button"><i class="fas fa-comment-alt"></i> Chat</button>
+        <div class="toolbar">
+            <ul>
+              <li><a href="#painel2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vagas<br>em andamento</a></li>
+              <li><a href="#AREAC">&nbsp;&nbsp;&nbsp;Área <br> Cultural</a></li>
+              <button id="profile-icon" class="user-button"><i class="fas fa-user"></i></button>
+              <!-- Adicione quantas opções desejar -->
+            </ul>
+          </div>
     </nav>
 
+    <div class="title-image-container2">
+        <img src="..\assets\fita.png" alt="Imagem" width="200px" height="150px">
+        <h2 style="color: black; font-size: 30px;"><br>VAGAS<br> RECENTES</h2>
+    </div>
     <div class="container-principal">
-        <div class="card" *ngFor="let item of contratantes"> 
+        <div class="card2" *ngFor="let item of contratantes"> 
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Nome:<h1>{{item.nome}}</h1>Tipo:<h1>{{item.procura}}</h1></th>
+                        <th>Entrada:<h1>{{item.entrada}}</h1>Saida:<h1>{{item.saida}}</h1></th>
+                        <th>Pagamento:<h1>{{item.pagamento}}</h1></th>
+                        <th>Descrição:<h1>{{item.descricao}}</h1></th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+        <div class="card2" *ngFor="let item of contratantes"> 
             <table class="table">
                 <thead>
                     <tr>
@@ -24,12 +48,157 @@
         </div>
     </div>
 
+    <div class="title-image-container3">
+        <img src="..\assets\fita.png" alt="Imagem" width="200px" height="150px">
+        <h2 style="color: black; font-size: 30px;"><br>VAGAS<br> DISPONÍVEIS</h2>
+    </div>
+    <div class="container-principal2">
+        <div class="card2" *ngFor="let item of contratantes"> 
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Nome:<h1>{{item.nome}}</h1>Tipo:<h1>{{item.procura}}</h1></th>
+                        <th>Entrada:<h1>{{item.entrada}}</h1>Saida:<h1>{{item.saida}}</h1></th>
+                        <th>Pagamento:<h1>{{item.pagamento}}</h1></th>
+                        <th>Descrição:<h1>{{item.descricao}}</h1></th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+        <div class="card2" *ngFor="let item of contratantes"> 
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Nome:<h1>{{item.nome}}</h1>Tipo:<h1>{{item.procura}}</h1></th>
+                        <th>Entrada:<h1>{{item.entrada}}</h1>Saida:<h1>{{item.saida}}</h1></th>
+                        <th>Pagamento:<h1>{{item.pagamento}}</h1></th>
+                        <th>Descrição:<h1>{{item.descricao}}</h1></th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
 
-    <div class="section1">
+    
+
+
+    <div id="AREAC" class="section1">
         <!-- Conteúdo da segunda seção -->
         <div class="title-image-container">
             <img src="..\assets\fita.png" alt="Imagem" width="200px" height="150px">
             <h2><br>ÁREA<br> CULTURAL</h2>
+        </div>
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <a href="https://www.cnnbrasil.com.br/economia/taylor-swift-rbd-the-town-shows-internacionais-animam-fas-e-movimentam-economia-das-cidades/">
+                <div class="card">
+                    <div class="card-img-overlay">
+                      <h5 class="card-title">CNN</h5>
+                      <p class="card-text">Taylor Swift, RBD, The Town: shows internacionais animam fãs e movimentam economia das cidades</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <a href="https://g1.globo.com/pop-arte/musica/blog/mauro-ferreira/post/2023/12/01/kevin-o-chris-ecoa-tamborzao-raiz-com-ep-que-traz-as-seis-faixas-do-ultimo-volume.ghtml">
+              <div class="carousel-item">
+                <div class="card3">
+                    <div class="card-img-overlay">
+                      <h5 class="card3-title">G1</h5>
+                      <p class="card3-text">Kevin O Chris ecoa 'Tamborzão raiz' com EP que traz as seis faixas do último volume</p>
+                    </div>
+                  </div>
+              </div>
+              </a>
+              <div class="carousel-item">
+               <div class="card">
+                <div class="card-img-overlay">
+                  <h5 class="card-title">CNN</h5>
+                  <p class="card-text">Taylor Swift, RBD, The Town: shows internacionais animam fãs e movimentam economia das cidades</p>
+                </div>
+              </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <div id="carouselExampleFade" class="carousel2 slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <a href="https://g1.globo.com/ma/maranhao/cultura/noticia/2023/12/01/exposicoes-de-arte-fotografia-e-shows-saiba-o-que-curtir-de-graca-em-sao-luis-no-mes-de-dezembro.ghtml">
+                <div class="card4">
+                    <div class="card-img-overlay">
+                      <h5 class="card4-title">G1</h5>
+                      <p class="card4-text">Exposições de arte, fotografia e shows: saiba o que curtir de graça em São Luís no mês de dezembro</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <a href="https://www.gov.br/iphan/pt-br/assuntos/noticias/exposicao-fotografica-apresenta-a-diversidade-da-cultura-popular-no-distrito-federal">
+              <div class="carousel-item">
+                <div class="card5">
+                    <div class="card-img-overlay">
+                      <h5 class="card5-title">GOV</h5>
+                      <p class="card5-text">Exposição fotográfica apresenta a diversidade da cultura popular no Distrito Federal</p>
+                    </div>
+                  </div>
+              </div>
+              </a>
+              <div class="carousel-item">
+               <div class="card">
+                <div class="card-img-overlay">
+                  <h5 class="card-title">CNN</h5>
+                  <p class="card-text">Taylor Swift, RBD, The Town: shows internacionais animam fãs e movimentam economia das cidades</p>
+                </div>
+              </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+
+    <div class="title-image-container4">
+        <img src="..\assets\fita.png" alt="Imagem" width="200px" height="150px">
+        <h2 style="color: black; font-size: 30px;"><br>VAGAS<br> EM ANDAMENTO</h2>
+    </div>
+    <div class="container-principal3">
+        <div class="card2" *ngFor="let item of contratantes"> 
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Nome:<h1>{{item.nome}}</h1>Tipo:<h1>{{item.procura}}</h1></th>
+                        <th>Entrada:<h1>{{item.entrada}}</h1>Saida:<h1>{{item.saida}}</h1></th>
+                        <th>Pagamento:<h1>{{item.pagamento}}</h1></th>
+                        <th>Descrição:<h1>{{item.descricao}}</h1></th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+        <div class="card2" *ngFor="let item of contratantes"> 
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Nome:<h1>{{item.nome}}</h1>Tipo:<h1>{{item.procura}}</h1></th>
+                        <th>Entrada:<h1>{{item.entrada}}</h1>Saida:<h1>{{item.saida}}</h1></th>
+                        <th>Pagamento:<h1>{{item.pagamento}}</h1></th>
+                        <th>Descrição:<h1>{{item.descricao}}</h1></th>
+                    </tr>
+                </thead>
+            </table>
         </div>
     </div>
 </body>

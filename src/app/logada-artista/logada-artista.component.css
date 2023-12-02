@@ -65,6 +65,57 @@
     margin-left: 40px;
 }
 
+.toolbar {
+  margin-left: auto;
+}
+
+.toolbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.toolbar li {
+  display: inline-block;
+  margin-right: 20px; /* Espaçamento entre as opções */
+}
+
+.toolbar a {
+  text-decoration: none;
+  color: #ffffff; /* Cor do texto */
+  font-weight: bold;
+}
+
+.toolbar a:hover {
+  color: #bf1313; /* Cor ao passar o mouse */
+}
+
+#profile-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #ffffff; /* Cor padrão */
+  border: none;
+  cursor: pointer;
+}
+
+#profile-icon.active {
+  /* Adicione estilos para a cor ativa */
+  background-color: #3498db; /* Por exemplo, azul */
+}
+
+.user-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0 10px;
+  font-size: 50px;
+  margin-right: 10px;
+  color: #000000; /* Cor do texto */
+}
+
+
+
 .chat-button {
     background: none;
     border: none;
@@ -72,7 +123,11 @@
     padding: 0 10px;
     font-size: 20px;
     margin-right: 200px;
-    color: #ffffff; /* Cor do texto */
+    color: #8c8c8c; /* Cor do texto */
+}
+
+.user-button:hover, .profile-icon:hover{
+  color: #bf1313; 
 }
 
 /* Estilos para o ícone de chat (FontAwesome) */
@@ -125,9 +180,41 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around; /* Ajuste o alinhamento horizontal */
-    margin-top: 100px; /* Define a margem superior como 100px */
+    margin-top: 250px; /* Define a margem superior como 100px */
+    width: 650px;
   }
-  
+
+  .container-principal2 {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Ajuste o alinhamento horizontal */
+    margin-top: -845px; /* Define a margem superior como 100px */
+    width: 650px;
+    margin-left: 850px;
+  }
+
+  .container-principal3 {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Ajuste o alinhamento horizontal */
+    margin-top: 445px; /* Define a margem superior como 100px */
+    width: 650px;
+    margin-left: 50px;
+  }
+
+  .container-principal::after {
+    content: ''; /* Adiciona conteúdo ao pseudo-elemento */
+    position: absolute; /* Define a posição como absoluta */
+    top: 470px; /* Posiciona o elemento 120px do topo */
+    height: 430px; /* Define a altura como 630px */
+    left: 760px; /* Posiciona a 20px da esquerda */
+    transform: translateX(-50%); /* Move para o centro horizontal */
+    width: 2px; /* Define a largura como 10px */
+    background: black;
+    border-radius: 5px; /* Define o raio da borda */
+  }
   /*PRIMEIRA SEÇÃO*/
 
   .section3::before {
@@ -159,7 +246,7 @@
   .section1 {
     position: absolute;
     background-color:#2190a3; /* Cor de fundo azul */
-    height: 116vh; /* Altura de 100% da altura da janela de visualização */
+    height: 135vh; /* Altura de 100% da altura da janela de visualização */
     width: 545px; /* Largura de 1500px */
     margin-left: 950px; /* Define a margem esquerda como 0px */
     margin-top: 400px;
@@ -252,6 +339,57 @@
     margin-bottom: 20px; /* Adiciona uma margem inferior */
     margin-top: 190px; /* Define a margem superior como 190px */
   }
+
+  .title-image-container2 {
+    position: absolute;
+    display: flex; /* Alinha os elementos lado a lado */
+    align-items: center; /* Centraliza verticalmente os elementos */
+    margin-bottom: 20px; /* Adiciona uma margem inferior */
+    margin-top: -145px; /* Define a margem superior como 190px */
+    margin-left: -40px;
+  }
+
+  .title-image-container2 h2 {
+    margin-top: -25px; /* Define a margem superior como -25px */
+    margin-left: -60px; /* Define a margem esquerda como 50px */
+    font-family: "Raleway", sans-serif; /* Define a família da fonte */
+    line-height: 1.2; /* Define a altura da linha */
+    color: #ffffff; /* Define a cor do texto como branca */
+  }
+
+  .title-image-container3 {
+    position: absolute;
+    display: flex; /* Alinha os elementos lado a lado */
+    align-items: center; /* Centraliza verticalmente os elementos */
+    margin-bottom: 20px; /* Adiciona uma margem inferior */
+    margin-top: -990px; /* Define a margem superior como 190px */
+    margin-left: 800px;
+  }
+
+  .title-image-container3 h2 {
+    margin-top: -25px; /* Define a margem superior como -25px */
+    margin-left: -60px; /* Define a margem esquerda como 50px */
+    font-family: "Raleway", sans-serif; /* Define a família da fonte */
+    line-height: 1.2; /* Define a altura da linha */
+    color: #ffffff; /* Define a cor do texto como branca */
+  }
+
+  .title-image-container4 {
+    position: absolute;
+    display: flex; /* Alinha os elementos lado a lado */
+    align-items: center; /* Centraliza verticalmente os elementos */
+    margin-bottom: 20px; /* Adiciona uma margem inferior */
+    margin-top: 290px; /* Define a margem superior como 190px */
+    margin-left: -40px;
+  }
+
+  .title-image-container4 h2 {
+    margin-top: -25px; /* Define a margem superior como -25px */
+    margin-left: -60px; /* Define a margem esquerda como 50px */
+    font-family: "Raleway", sans-serif; /* Define a família da fonte */
+    line-height: 1.2; /* Define a altura da linha */
+    color: #ffffff; /* Define a cor do texto como branca */
+  }
   
   .title-image-container img {
     margin-left: -60px; /* Define a margem esquerda como -60px */
@@ -317,32 +455,18 @@
     transition: transform 0.5s ease; /* Adiciona transição suave ao transform */
   }
   
-  .card {
+  .card2 {
     position: flex;
     margin-top: 20px;
     width: 300px; /* Define a largura como 500px */
     height: 380px; /* Define a altura como 450px */
     padding: 20px; /* Adiciona preenchimento */
-    margin-right: 310px; /* Define a margem direita como 10px */
+    left: -0px;
     margin-bottom: 20px; /* Define a margem inferior como 20px */
-    background: #f0f0f0; /* Cor de fundo cinza claro */
+    background: #2190a3; /* Cor de fundo cinza claro */
     border-radius: 8px; /* Define o raio da borda */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
-  }
-  
-
-  .prev-button,
-  .next-button {
-    position: absolute; /* Define a posição como absoluta */
-    top: 50%; /* Alinha ao meio verticalmente */
-    transform: translateY(-50%); /* Move para cima metade da altura */
-    padding: 10px 20px; /* Adiciona preenchimento */
-    border: none; /* Remove a borda */
-    border-radius: 4px; /* Define o raio da borda */
-    background-color: #3498db; /* Cor de fundo azul claro */
-    color: white; /* Cor do texto branca */
-    cursor: pointer; /* Define o cursor como ponteiro */
-  }
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.595); /* Adiciona sombra */
+  } 
   
   .prev-button {
     left: 10px; /* Define a posição à esquerda como 10px */
@@ -412,8 +536,7 @@
 .table {
     width: 101%;
     border-collapse: collapse;
-    font-family: Arial, sans-serif;
-    border: 1px solid #ddd;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Estilos para o cabeçalho da tabela */
@@ -424,6 +547,7 @@
     border-bottom: 1px solid #ddd;
     display: flex;
     flex-direction: row;
+    border-radius: 10px;
 }
 
 /* Estilos para as células do cabeçalho */
@@ -437,6 +561,7 @@
   display: flex;
   flex-direction: row;
   flex: 1;
+  border-radius: 10px;
 }
 
 /* Estilos para as células da tabela */
@@ -451,7 +576,128 @@
     flex: 1;
 }
 
+.card {
+  background-image: url('https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2023/05/GettyImages-1484031614-e1684150605936.jpg?w=1220&h=674&crop=1');
+  background-size: 600px; /* Ajustar o tamanho da imagem */
+  background-position: center; /* Posicionar a imagem no centro */
+  position: relative;
+  max-width: 600px; /* Defina a largura máxima conforme necessário */
+  height: 300px;
+  border-radius: 10px;
+  margin: 20px; /* Ajuste a margem conforme desejado */
+  overflow: hidden;
+}
+
+.card3 {
+  background-image: url('https://s2-g1.glbimg.com/8J_57ZlTL3AFsjY36aAjBmH6d-U=/0x0:4160x2774/1008x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/O/K/mpHg0sRBAT6Kp4tdWUqg/kevin3foto.jpg');
+  background-size: 600px; /* Ajustar o tamanho da imagem */
+  background-position: center; /* Posicionar a imagem no centro */
+  position: relative;
+  max-width: 600px; /* Defina a largura máxima conforme necessário */
+  height: 300px;
+  border-radius: 10px;
+  margin: 20px; /* Ajuste a margem conforme desejado */
+  overflow: hidden;
+}
+
+.card4 {
+  background-image: url('https://s2-g1.glbimg.com/p-0llVQTZFvXL7zIQLZpWi_Dfhk=/0x0:860x573/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/B/d/5vy96jRMOX7IxltYBnDw/unnamed.jpg');
+  background-size: 600px; /* Ajustar o tamanho da imagem */
+  background-position: center; /* Posicionar a imagem no centro */
+  position: relative;
+  max-width: 600px; /* Defina a largura máxima conforme necessário */
+  height: 300px;
+  border-radius: 10px;
+  margin: 20px; /* Ajuste a margem conforme desejado */
+  overflow: hidden;
+}
+
+.card5 {
+  background-image: url('https://www.gov.br/iphan/pt-br/assuntos/noticias/exposicao-fotografica-apresenta-a-diversidade-da-cultura-popular-no-distrito-federal/pareiada-na-posse-do-lula-01-01-2023-foto-davi-mello-73-1-1.jpg/@@images/c354b08e-570c-4c23-ac53-b4c0fcdabad8.jpeg');
+  background-size: 700px; /* Ajustar o tamanho da imagem */
+  background-position: center; /* Posicionar a imagem no centro */
+  position: relative;
+  max-width: 600px; /* Defina a largura máxima conforme necessário */
+  height: 300px;
+  border-radius: 10px;
+  margin: 20px; /* Ajuste a margem conforme desejado */
+  overflow: hidden;
+}
+
+
+.card-title {
+  margin-top: 150px;
+  font-size: 24px; /* Tamanho do título */
+  margin-bottom: 10px; /* Espaçamento inferior do título */
+  color: red;
+}
+
+.card3-title {
+  margin-left: 15px;
+  margin-top: 175px;
+  font-size: 24px; /* Tamanho do título */
+  margin-bottom: 10px; /* Espaçamento inferior do título */
+  color: red;
+}
+
+.card4-title {
+  margin-left: 15px;
+  margin-top: 175px;
+  font-size: 24px; /* Tamanho do título */
+  margin-bottom: 10px; /* Espaçamento inferior do título */
+  color: red;
+}
+
+.card5-title {
+  margin-left: 15px;
+  margin-top: 175px;
+  font-size: 24px; /* Tamanho do título */
+  margin-bottom: 10px; /* Espaçamento inferior do título */
+  color: yellow;
+}
+
+.card-text {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #ffffff;
+  font-size: 20px; /* Tamanho do texto */
+  line-height: 1.4; /* Altura da linha do texto */
+}
   
-  
+.card3-text {
+  margin-left: 15px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #ffffff;
+  font-size: 20px; /* Tamanho do texto */
+  line-height: 1.4; /* Altura da linha do texto */
+}
+
+.card4-text {
+  margin-left: 15px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #ffffff;
+  font-size: 20px; /* Tamanho do texto */
+  line-height: 1.4; /* Altura da linha do texto */
+}
+
+.card5-text {
+  margin-left: 15px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #ffffff;
+  font-size: 20px; /* Tamanho do texto */
+  line-height: 1.4; /* Altura da linha do texto */
+}
+
+.carousel{
+  margin-left: 400px;
+  width: 550px;
+}
+
+.carousel2{
+  margin-top: 350px;
+  margin-left: 100px;
+  width: 550px;
+}
+
+
 
  
