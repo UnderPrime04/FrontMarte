@@ -199,9 +199,31 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around; /* Ajuste o alinhamento horizontal */
-    margin-top: 445px; /* Define a margem superior como 100px */
+    margin-top: 245px; /* Define a margem superior como 100px */
     width: 650px;
     margin-left: 50px;
+  }
+
+  .container-principal4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start; /* Ajuste a propriedade align-items conforme necessário */
+    position: flex;
+    margin-top: 235px; /* Define a margem superior como 100px */
+    width: 1250px;
+    margin-left: 130px;
+  }
+
+  .container-principal5 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start; /* Ajuste a propriedade align-items conforme necessário */
+    position: flex;
+    margin-top: 15px; /* Define a margem superior como 100px */
+    width: 1250px;
+    margin-left: 130px;
   }
 
   .container-principal::after {
@@ -249,7 +271,7 @@
     height: 135vh; /* Altura de 100% da altura da janela de visualização */
     width: 545px; /* Largura de 1500px */
     margin-left: 950px; /* Define a margem esquerda como 0px */
-    margin-top: 400px;
+    margin-top: 215px;
     display: inline-block; /* Define como bloco em linha */
     align-items: center; /* Centraliza verticalmente os elementos */
     justify-content: center; /* Centraliza horizontalmente os elementos */
@@ -379,11 +401,11 @@
     display: flex; /* Alinha os elementos lado a lado */
     align-items: center; /* Centraliza verticalmente os elementos */
     margin-bottom: 20px; /* Adiciona uma margem inferior */
-    margin-top: 290px; /* Define a margem superior como 190px */
+    margin-top: 105px; /* Define a margem superior como 190px */
     margin-left: -40px;
   }
 
-  .title-image-container4 h2 {
+ .title-image-container4 h2 {
     margin-top: -25px; /* Define a margem superior como -25px */
     margin-left: -60px; /* Define a margem esquerda como 50px */
     font-family: "Raleway", sans-serif; /* Define a família da fonte */
@@ -391,6 +413,64 @@
     color: #ffffff; /* Define a cor do texto como branca */
   }
   
+
+  .title-image-container5 {
+    position: absolute;
+    display: flex; /* Alinha os elementos lado a lado */
+    align-items: center; /* Centraliza verticalmente os elementos */
+    margin-bottom: 100px; /* Adiciona uma margem inferior */
+    margin-top: -190px; /* Define a margem superior como 190px */
+    margin-left: -1250px;
+  }
+
+  .title-image-container5 h2 {
+    margin-top: -25px; /* Define a margem superior como -25px */
+    margin-left: -60px; /* Define a margem esquerda como 50px */
+    font-family: "Raleway", sans-serif; /* Define a família da fonte */
+    line-height: 1.2; /* Define a altura da linha */
+    color: #000000; /* Define a cor do texto como branca */
+  }
+
+  .title-image-container6 {
+    position: absolute;
+    display: flex; /* Alinha os elementos lado a lado */
+    align-items: center; /* Centraliza verticalmente os elementos */
+    margin-bottom: 100px; /* Adiciona uma margem inferior */
+    margin-top: -150px; /* Define a margem superior como 190px */
+    margin-left: -140px;
+    width: 900px;
+  }
+
+  .title-image-container7 {
+    position: absolute;
+    display: flex; /* Alinha os elementos lado a lado */
+    align-items: center; /* Centraliza verticalmente os elementos */
+    margin-bottom: 100px; /* Adiciona uma margem inferior */
+    margin-top: -150px; /* Define a margem superior como 190px */
+    margin-left: -140px;
+    width: 600px;
+  }
+  
+
+  .title-image-container6 h2 {
+    margin-top: -25px; /* Define a margem superior como -25px */
+    margin-left: -60px; /* Define a margem esquerda como 50px */
+    font-family: "Raleway", sans-serif; /* Define a família da fonte */
+    line-height: 1.2; /* Define a altura da linha */
+    color: #000000; /* Define a cor do texto como branca */
+  }
+
+  .title-image-container7 h2 {
+    margin-top: -25px; /* Define a margem superior como -25px */
+    margin-left: -60px; /* Define a margem esquerda como 50px */
+    font-family: "Raleway", sans-serif; /* Define a família da fonte */
+    line-height: 1.2; /* Define a altura da linha */
+    color: #000000; /* Define a cor do texto como branca */
+  }
+
+
+
+ 
   .title-image-container img {
     margin-left: -60px; /* Define a margem esquerda como -60px */
     margin-right: -60px; /* Define a margem direita como -60px */
@@ -624,6 +704,41 @@
   overflow: hidden;
 }
 
+.card6 {
+  position: absolute;
+  background-color:#ffffff;
+  position: relative;
+  width: 900px; /* Defina a largura máxima conforme necessário */
+  height: 280px;
+  border-radius: 10px;
+  margin-top: -90px; /* Ajuste a margem conforme desejado */
+  overflow: hidden;
+  margin: 1em auto;
+}
+
+
+.card6-title {
+  margin-left: 5px;
+  margin-top: 15px;
+  font-size: 15px; /* Tamanho do título */
+  margin-bottom: 10px; /* Espaçamento inferior do título */
+  color: #2190a3;
+}
+
+.card6-text {
+  margin-left: 5px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #000000;
+  font-size: 15px; /* Tamanho do texto */
+  line-height: 1.4; /* Altura da linha do texto */
+}
+
+.card6-text2 {
+  margin-left: 5px;
+  font-family:'Courier New', Courier, monospace;
+  font-size: 15px; /* Tamanho do texto */
+  line-height: 1.4; /* Altura da linha do texto */
+}
 
 .card-title {
   margin-top: 150px;
@@ -697,6 +812,134 @@
   margin-left: 100px;
   width: 550px;
 }
+
+.container-list{
+  margin-top: 1400px;
+  width: 300px;
+  margin-left: 110px;
+}
+
+.button {
+  margin-top: 30px; /* Define a margem superior como 180px */
+  margin-left: 75px; /* Define a margem esquerda como 75px */
+  padding: 20px 100px; /* Define o preenchimento */
+  background-color: #000000; /* Cor de fundo preta */
+  color: #ffffff; /* Cor do texto branca */
+  border: none; /* Remove a borda */
+  border-radius: 30px; /* Define o raio da borda */
+  font-size: 16px; /* Define o tamanho da fonte como 16px */
+  cursor: pointer; /* Define o cursor como ponteiro */
+  z-index: 2; /* Define o índice Z */
+}
+
+.button {
+  padding: 10px 20px;
+  margin-left: 60px;
+  height: 40px;
+  width: 220px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffffff; /* Cor de fundo do botão */
+  color: rgb(0, 0, 0); /* Cor do texto */
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Estilo ao passar o mouse */
+.button:hover {
+  background-color: #a2a2a2; /* Cor de fundo alterada ao passar o mouse */
+}
+
+/* Estilos para a lista */
+.container-list ul {
+  list-style: none; /* Remove os marcadores de lista */
+  padding: 0; /* Remove o preenchimento padrão */
+  margin: 0; /* Remove as margens padrão */
+}
+
+.container-list li {
+  padding: 8px 0; /* Espaçamento interno superior e inferior */
+  font-size: 25px;
+  font-family: "Raleway", sans-serif; /* Define a família da fonte */
+  border-bottom: 1px solid #ccc; /* Linha divisória entre os itens */
+  transition: all 0.3s ease; /* Transição suave ao passar o mouse */
+  color: rgb(25, 145, 166);
+}
+
+li h1{
+  margin-top: 10px;
+  font-size: 15px;
+  font-family: "Raleway", sans-serif; /* Define a família da fonte */
+  line-height: 1.2; /* Define a altura da linha */
+  color: #9699a4;
+}
+
+/* Estilo ao passar o mouse */
+li:hover {
+  background-color: #f0f0f0; /* Cor de fundo ao passar o mouse */
+  cursor: pointer; /* Cursor alterado para indicar interação */
+}
+
+.container-list2 ul {
+  margin-left: 50px;
+  list-style: none; /* Remove os marcadores padrão */
+  padding: 0; /* Remove o espaçamento interno padrão */
+}
+
+.container-list2 li {
+  padding: 26px 0; /* Espaçamento interno superior e inferior */
+  font-size: 25px;
+  font-family: "Raleway", sans-serif; /* Define a família da fonte */
+  border-bottom: 1px solid #ccc; /* Linha divisória entre os itens */
+  transition: all 0.3s ease; /* Transição suave ao passar o mouse */
+  color: #000000;
+}
+
+
+ul li i {
+  position: flex;
+  left: 20px;
+  top: 2px;
+}
+
+.container-list2{
+  position: absolute;
+  margin-top: -455px;
+  width: 350px;
+  margin-left: 510px;
+}
+
+.container-list3 ul {
+  list-style: none; /* Remove os marcadores padrão */
+  padding: 0; /* Remove o espaçamento interno padrão */
+}
+
+.container-list3 li {
+  padding: 26px 0; /* Espaçamento interno superior e inferior */
+  font-size: 25px;
+  font-family: "Raleway", sans-serif; /* Define a família da fonte */
+  border-bottom: 1px solid #ccc; /* Linha divisória entre os itens */
+  transition: all 0.3s ease; /* Transição suave ao passar o mouse */
+  color: #000000;
+}
+
+
+ul li i {
+  position: flex;
+  left: 20px;
+  top: 2px;
+}
+
+
+.container-list3{
+  position: absolute;
+  margin-top: -455px;
+  width: 350px;
+  margin-left: 1010px;
+}
+
+
 
 
 

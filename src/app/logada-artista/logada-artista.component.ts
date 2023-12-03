@@ -15,6 +15,7 @@ export class LogadaArtistaComponent implements OnInit{
     this.contratantes = [
       { "id": 1, "nome": "Barzin da Esquina", "procura": "Cantor", "descricao": "Procuramos cantor para cantar dia 12/12/24 das 23 as 00", "entrada": "23:00", "saida": "00:00", "pagamento": "A combinar" },
       { "id": 2, "nome": "Barzin da Esquina", "procura": "Cantor", "descricao": "Procuramos cantor para cantar dia 12/12/24 das 23 as 00", "entrada": "23:00", "saida": "00:00", "pagamento": "A combinar" },
+
 ];
 }
 
