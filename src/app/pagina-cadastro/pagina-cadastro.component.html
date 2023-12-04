@@ -92,12 +92,13 @@
                 </div>
 
                 <div class="form-group">
-                    <label>CNPJ</label>
-                    <input type="text" class="form-control" formControlName="cnpj"/>
-                    <span *ngIf="cadastroForm.get('cnpj')?.invalid && cadastroForm.get('cnpj')?.touched" class="mensagem-erro">
-                        CNPJ inválido
+                    <label>CPF</label>
+                    <input type="text" class="form-control" formControlName="cpf" />
+                    <span *ngIf="cadastroForm.get('cpf')?.invalid && cadastroForm.get('cpf')?.touched" class="mensagem-erro">
+                        CPF inválido
                     </span>
                 </div>
+
 
                 <div class="form-group">
                     <label>CEP</label>

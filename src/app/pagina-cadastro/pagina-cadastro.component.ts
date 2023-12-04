@@ -87,12 +87,7 @@ export class PaginaCadastroComponent {
 
       // Redirecionar para a página correspondente
       window.location.href = '/logada/1';
-    } else if (isCNPJ(cadastroValue.cnpj)) {
-      this.errorMessage = null; // Limpar a mensagem de erro, se houver
-
-      // Redirecionar para a página correspondente
-      window.location.href = '/logada/2';
-    } else if (Validacoes.isEmail(cadastroValue.email)) {
+    }  else if (Validacoes.isEmail(cadastroValue.email)) {
       this.errorMessage = null; // Limpar a mensagem de erro, se houver
 
       // Redirecionar para a página correspondente

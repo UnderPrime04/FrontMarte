@@ -50,29 +50,27 @@
 
     <div class="title-image-container3">
         <img src="..\assets\fita.png" alt="Imagem" width="200px" height="150px">
-        <h2 style="color: black; font-size: 30px;"><br>VAGAS<br> DISPONÍVEIS</h2>
+        <h2 style="color: black; font-size: 30px;"><br>ARTISTAS<br> DISPONÍVEIS</h2>
     </div>
     <div class="container-principal2">
-        <div class="card2" *ngFor="let item of contratantes"> 
+        <div class="card2" *ngFor="let item of artistas"> 
             <table class="table">
                 <thead>
                     <tr>
-                        <th>Nome:<h1>{{item.nome}}</h1>Tipo:<h1>{{item.procura}}</h1></th>
-                        <th>Entrada:<h1>{{item.entrada}}</h1>Saida:<h1>{{item.saida}}</h1></th>
-                        <th>Pagamento:<h1>{{item.pagamento}}</h1></th>
-                        <th>Descrição:<h1>{{item.descricao}}</h1></th>
+                      <th>Nome:<h1>{{item.nome}}</h1></th>
+                      <th>Tipo:<h1>{{item.tipo}}</h1></th>
+                      <th>Descrição:<h1>{{item.descricao}}</h1></th>
                     </tr>
                 </thead>
             </table>
         </div>
-        <div class="card2" *ngFor="let item of contratantes"> 
+        <div class="card2" *ngFor="let item of artistas"> 
             <table class="table">
                 <thead>
                     <tr>
-                        <th>Nome:<h1>{{item.nome}}</h1>Tipo:<h1>{{item.procura}}</h1></th>
-                        <th>Entrada:<h1>{{item.entrada}}</h1>Saida:<h1>{{item.saida}}</h1></th>
-                        <th>Pagamento:<h1>{{item.pagamento}}</h1></th>
-                        <th>Descrição:<h1>{{item.descricao}}</h1></th>
+                      <th>Nome:<h1>{{item.nome}}</h1></th>
+                      <th>Tipo:<h1>{{item.tipo}}</h1></th>
+                      <th>Descrição:<h1>{{item.descricao}}</h1></th>
                     </tr>
                 </thead>
             </table>

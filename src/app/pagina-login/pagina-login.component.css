@@ -128,3 +128,28 @@
   }
 
 
+  .form-control {
+    margin-left: -300px;
+    width: 390px; /* Define a largura total do elemento */
+    padding: 8px; /* Adiciona preenchimento interno */
+    margin-bottom: 10px; /* Adiciona espaço abaixo do elemento */
+    border: 1px solid #ccc; /* Adiciona uma borda */
+    border-radius: 8px; /* Adiciona cantos arredondados */
+    box-sizing: border-box; /* Garante que a largura e altura incluam a borda e o preenchimento */
+  }
+
+  .form-group label{
+    margin-left: -300px;
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  }
+
+  .form-group label:hover {
+    color: #0300a1;  /* Altera a cor do texto ao passar o mouse */
+    cursor: pointer; /* Altera o cursor ao passar o mouse */
+  }
+  
+  .btn{
+    margin-left: -300px;
+  }
+
