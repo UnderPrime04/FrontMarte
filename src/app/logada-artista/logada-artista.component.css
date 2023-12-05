@@ -30,7 +30,7 @@
   .navbar img {
     margin-left: 40px; /* Define a margem esquerda como 40px */
   }
-  
+
   .comp {
       margin-left: 980px; /* Define a margem esquerda como 980px */
       text-decoration: none; /* Remove a decoração do texto */
@@ -127,7 +127,7 @@
 }
 
 .user-button:hover, .profile-icon:hover{
-  color: #bf1313; 
+  color: #bf1313;
 }
 
 /* Estilos para o ícone de chat (FontAwesome) */
@@ -137,7 +137,7 @@
 }
 
 .chat-button:hover, .image-text:hover{
-    color: #bf1313; 
+    color: #bf1313;
 }
 
 /* Estilos para a barra de pesquisa */
@@ -173,8 +173,8 @@
 .fa-search {
     font-size: inherit;
 }
-  
-  
+
+
   /*PÁGINA*/
   .container-principal {
     display: flex;
@@ -263,33 +263,33 @@
     background: linear-gradient(to bottom, #1b4148, #487077); /* Define um gradiente vertical de vermelho para verde */
     border-radius: 5px; /* Define o raio da borda */
   }
-  
+
 
   .section1 {
     position: absolute;
     background-color:#2190a3; /* Cor de fundo azul */
     height: 135vh; /* Altura de 100% da altura da janela de visualização */
     width: 545px; /* Largura de 1500px */
-    margin-left: 950px; /* Define a margem esquerda como 0px */
-    margin-top: 215px;
+    margin-left: 1100px; /* Define a margem esquerda como 0px */
+    margin-top: 100px;
     display: inline-block; /* Define como bloco em linha */
     align-items: center; /* Centraliza verticalmente os elementos */
     justify-content: center; /* Centraliza horizontalmente os elementos */
   }
-  
+
   .section1 .title-image-container {
     display: flex; /* Alinha os elementos lado a lado */
     align-items: center; /* Centraliza verticalmente os elementos */
     margin-bottom: 20px; /* Adiciona uma margem inferior */
     margin-top: 190px; /* Define a margem superior como 190px */
   }
-  
+
   .section1 .title-image-container img {
     margin-top: -140px; /* Define a margem superior como -140px */
     margin-left: -60px; /* Define a margem esquerda como -60px */
     margin-right: -60px; /* Define a margem direita como -60px */
   }
-  
+
   .section1 .title-image-container h2 {
     margin-top: -180px; /* Define a margem superior como -210px */
     margin-left: -10px; /* Define a margem esquerda como 50px */
@@ -298,7 +298,7 @@
     line-height: 1.2; /* Define a altura da linha */
     color: #ffffff; /* Define a cor do texto como branca */
   }
-  
+
   .section1 .title-image-container h3 {
     margin-top: -70px; /* Define a margem superior como -70px */
     margin-left: -450px; /* Define a margem esquerda como -450px */
@@ -307,7 +307,7 @@
     line-height: 1.2; /* Define a altura da linha */
     color: #000000; /* Define a cor do texto como preta */
   }
-  
+
   .button {
     margin-top: 180px; /* Define a margem superior como 180px */
     margin-left: 75px; /* Define a margem esquerda como 75px */
@@ -320,11 +320,11 @@
     cursor: pointer; /* Define o cursor como ponteiro */
     z-index: 2; /* Define o índice Z */
   }
-  
+
   .button:hover {
     background-color: #333333; /* Cor de fundo escura ao passar o mouse */
   }
-  
+
   .container-carousel2 {
     margin-top: 200px; /* Define a margem superior como -400px */
     max-width: 600px; /* Define a largura máxima como 600px */
@@ -332,19 +332,19 @@
     position: flex; /* Define a posição como flex */
     border-radius: 20px; /* Define o raio da borda */
   }
-  
+
   #carouselExampleControls .carousel-item img {
     width: 600px; /* Define a largura da imagem como 600px */
     height: 380px; /* Define a altura da imagem como 380px */
   }
-  
+
   #carouselExampleControls .carousel-inner {
     border-radius: 15px; /* Adiciona borda arredondada ao carousel-inner */
     overflow: hidden; /* Esconde o conteúdo que estourar o container */
   }
-  
+
   /*SEGUNDA SEÇÃO*/
-  
+
   /* Ajustes para exibir 3 cards por vez e aumentar o tamanho */
   .section2 {
     background-color: #1b7f91; /* Cor de fundo azul escuro */
@@ -354,7 +354,7 @@
     height: 700px; /* Altura de 700px */
     margin-left: 0px; /* Define a margem esquerda como 0px */
   }
-  
+
   .title-image-container {
     display: flex; /* Alinha os elementos lado a lado */
     align-items: center; /* Centraliza verticalmente os elementos */
@@ -412,7 +412,7 @@
     line-height: 1.2; /* Define a altura da linha */
     color: #ffffff; /* Define a cor do texto como branca */
   }
-  
+
 
   .title-image-container5 {
     position: absolute;
@@ -450,7 +450,7 @@
     margin-left: -140px;
     width: 600px;
   }
-  
+
 
   .title-image-container6 h2 {
     margin-top: -25px; /* Define a margem superior como -25px */
@@ -470,12 +470,12 @@
 
 
 
- 
+
   .title-image-container img {
     margin-left: -60px; /* Define a margem esquerda como -60px */
     margin-right: -60px; /* Define a margem direita como -60px */
   }
-  
+
   .title-image-container h2 {
     margin-top: -25px; /* Define a margem superior como -25px */
     margin-left: 50px; /* Define a margem esquerda como 50px */
@@ -484,7 +484,7 @@
     line-height: 1.2; /* Define a altura da linha */
     color: #ffffff; /* Define a cor do texto como branca */
   }
-  
+
   .title-image-container h3 {
     margin-top: 40px; /* Define a margem superior como 40px */
     margin-left: -320px; /* Define a margem esquerda como -320px */
@@ -493,7 +493,7 @@
     line-height: 1.2; /* Define a altura da linha */
     color: #000000; /* Define a cor do texto como preta */
   }
-  
+
   .section2-titulo {
     font-family: "Raleway", sans-serif; /* Define a família da fonte */
     font-size: 24px; /* Define o tamanho da fonte como 24px */
@@ -501,7 +501,7 @@
     color: #ffffff; /* Define a cor do texto como branca */
     margin-bottom: -10px; /* Define a margem inferior como -10px */
   }
-  
+
   .section2-titulo2 {
     font-family: "Raleway", sans-serif; /* Define a família da fonte */
     font-size: 14px; /* Define o tamanho da fonte como 14px */
@@ -509,7 +509,7 @@
     color: #000000; /* Define a cor do texto como preta */
     margin-top: 0; /* Define a margem superior como 0 */
   }
-  
+
   .carousel {
     margin-top: 90px; /* Define a distância do topo como 90px */
     display: grid; /* Usa o modelo de layout grid */
@@ -529,12 +529,12 @@
     margin: 0 auto; /* Margem automática nas laterais */
     overflow: hidden; /* Esconde o conteúdo que estourar o container */
   }
-  
+
   .carousel-items {
     display: flex; /* Alinha os itens lado a lado */
     transition: transform 0.5s ease; /* Adiciona transição suave ao transform */
   }
-  
+
   .card2 {
     position: flex;
     margin-top: 20px;
@@ -546,16 +546,16 @@
     background: #2190a3; /* Cor de fundo cinza claro */
     border-radius: 8px; /* Define o raio da borda */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.595); /* Adiciona sombra */
-  } 
-  
+  }
+
   .prev-button {
     left: 10px; /* Define a posição à esquerda como 10px */
   }
-  
+
   .next-button {
     right: 10px; /* Define a posição à direita como 10px */
   }
-  
+
   /*TERCEIRA SEÇÃO*/
   .section3 {
     position: absolute;
@@ -569,8 +569,8 @@
     justify-content: center; /* Centraliza horizontalmente os itens */
     border-radius: 15px;
   }
-  
-   
+
+
   .section-title {
     margin-top: 200px; /* Define a margem superior como 200px */
     margin-left: 610px; /* Define a margem esquerda como 610px */
@@ -581,7 +581,7 @@
     color: #ffffff; /* Define a cor do texto como branca */
     margin-bottom: 20px; /* Espaçamento inferior de 20px */
   }
-  
+
   .section-title2 {
     margin-top: 300px; /* Define a margem superior como 300px */
     margin-left: 550px; /* Define a margem esquerda como 550px */
@@ -592,13 +592,13 @@
     color: #ffffff; /* Define a cor do texto como branca */
     margin-bottom: 20px; /* Espaçamento inferior de 20px */
   }
-  
+
   .image-container {
     position: relative; /* Define a posição como relativa */
     width: 100%; /* Define a largura como 100% */
     height: 500px; /* Define a altura como 500px */
   }
-  
+
   .image-container img {
     position: absolute; /* Define a posição como absoluta */
     width: 100px; /* Define a largura como 100px */
@@ -606,12 +606,12 @@
     object-fit: cover; /* Ajusta o tamanho da imagem para cobrir o container */
     border-radius: 10px; /* Define o raio da borda */
   }
-  
+
 
   /* Adicione mais estilos para mais imagens conforme necessário */
-  
-  
-  
+
+
+
   /* Estilos para a tabela */
 .table {
     width: 101%;
@@ -777,7 +777,7 @@
   font-size: 20px; /* Tamanho do texto */
   line-height: 1.4; /* Altura da linha do texto */
 }
-  
+
 .card3-text {
   margin-left: 15px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -943,4 +943,3 @@ ul li i {
 
 
 
- 

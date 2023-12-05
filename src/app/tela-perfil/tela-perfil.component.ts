@@ -6,11 +6,11 @@ import listPlugin from '@fullcalendar/list';
 import interactionPlugin from '@fullcalendar/interaction';
 
 @Component({
-  selector: 'app-tela-perfil-contratante',
-  templateUrl: './tela-perfil-contratante.component.html',
-  styleUrls: ['./tela-perfil-contratante.component.css']
+  selector: 'app-tela-perfil',
+  templateUrl: './tela-perfil.component.html',
+  styleUrls: ['./tela-perfil.component.css']
 })
-export class TelaPerfilContratanteComponent implements AfterViewInit {
+export class TelaPerfilComponent implements AfterViewInit {
   @ViewChild('calendar')
   calendarEl!: ElementRef;
   events: EventInput[] = [];
@@ -18,7 +18,7 @@ export class TelaPerfilContratanteComponent implements AfterViewInit {
   newEvent: { title: string, date: string, description: string, time: string } = { title: '', date: '', description: '', time: '' };
   eventModal!: HTMLElement;
   chatModal!: HTMLElement;
-  
+
 
   ngAfterViewInit() {
     const today = new Date(); // Obtém a data atual
@@ -31,7 +31,7 @@ export class TelaPerfilContratanteComponent implements AfterViewInit {
         right: 'dayGridMonth,timeGridWeek,timeGridDay,listWeek'
       },
       initialDate: today,
-      locale: 'pt-br', 
+      locale: 'pt-br',
       buttonText: {
         today: 'Hoje',
         dayGridMonth: 'Mês',
@@ -39,7 +39,7 @@ export class TelaPerfilContratanteComponent implements AfterViewInit {
         timeGridDay: 'Dia',
         listWeek: 'Lista Evento'
       },
-  
+
       navLinks: true,
       editable: true,
       dayMaxEvents: true,
@@ -60,12 +60,12 @@ export class TelaPerfilContratanteComponent implements AfterViewInit {
         text-decoration: none;
       }
     `;
-    
+
 
     this.calendarEl.nativeElement.appendChild(styleElement);
   }
 
-  
+
 
   handleDateClick(arg: any) {
     this.selectedDate = arg.dateStr;
@@ -91,12 +91,12 @@ export class TelaPerfilContratanteComponent implements AfterViewInit {
       start: this.selectedDate,
       allDay: true
     };
-  
+
     this.events.push(newEvent);
     this.closeModal();
     this.updateCalendarEvents(); // Atualiza os eventos no calendário após a adição
   }
-  
+
   updateCalendarEvents() {
     const calendarApi = this.calendarEl.nativeElement.fullCalendar;
     calendarApi.removeAllEvents();
